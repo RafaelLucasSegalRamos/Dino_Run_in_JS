@@ -15,7 +15,7 @@ document.addEventListener('keydown', function()
 const loop = setInterval(function()
 {
     const cactopos = cacto.offsetLeft
-    const dinacar = window.getComputedStyle(dino)
+    const dinacar = window.getComputedStyle(dino)/* <= Isto acaba se tornando um objeto */
     let jumph = dinacar.bottom.replace('px', '')
     
     Number(jumph)
